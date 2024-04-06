@@ -55,11 +55,11 @@ const MostInterested = ({ setOptionSelected }) => {
           <div
             key={option.value}
             className={`p-3 border w-full ${
-              selectedOption === option.value ? " border-2 border-black" : ""
+              selectedOption === option.value ? " rounded-md border-2 border-gray-600" : ""
             }`}
             onClick={() => handleOptionClick(option.value)}
           >
-            <div className="lg:flex gap-2 p-2 items-center">
+            <div className="flex gap-2 p-2 items-center">
               <Image
                 src={option.image}
                 alt="Picture of the author"

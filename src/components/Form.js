@@ -25,19 +25,17 @@ const Form = () => {
 
   useEffect(() => {
     if (page === 5) {
-      
       const timer = setTimeout(() => {
-        setPage(page + 1); 
-      }, 3000); 
+        setPage(page + 1);
+      }, 3000);
 
-      
       return () => clearTimeout(timer);
     }
   }, [page]);
 
   const handleNextPage = () => {
     setPage((currentPage) => currentPage + 1);
-    setOptionSelected(false); 
+    setOptionSelected(false);
   };
 
   const handleOptionSelected = () => {
@@ -72,7 +70,7 @@ const Form = () => {
 
   return (
     <div className="form">
-      {(page !== 5 && page !== 6) && (
+      {page !== 5 && page !== 6 && (
         <div className="progressbar mx-20 mt-5 rounded border-2">
           <div
             className="h-2 bg-[#30a386]"
@@ -97,13 +95,15 @@ const Form = () => {
       </div>
 
       <div className="form-body">{pageDisplay()}</div>
-      <div className="form-footer flex justify-center items-center">
-        {(page !== 5 && page !== 6) && (
+      <div className="form-footer my-5 flex justify-center items-center">
+        {page !== 5 && page !== 6 && (
           <button
             disabled={!optionSelected}
             onClick={handleNextPage}
             className={`px-3 py-2 rounded-md ${
-              optionSelected ? "bg-black text-white" : "bg-gray-300 text-gray-700"
+              optionSelected
+                ? "bg-black text-white"
+                : "bg-gray-300 text-gray-700"
             }`}
           >
             Continue

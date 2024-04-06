@@ -12,7 +12,7 @@ const FindingPath = () => {
             {" "}
             Most popular
           </span>
-          <div className="flex flex-col lg:flex-row gap-5 border rounded-lg p-5 items-center">
+          <div className="flex  gap-5 border rounded-lg p-5 items-center">
             <p className="">
               Foundational Math Build your foundational skills in algebra,
               geometry, and probability.
@@ -22,12 +22,12 @@ const FindingPath = () => {
               alt="Picture of the author"
               width={500}
               height={500}
-              className="h-16 w-16"
+              className="h-16 w-16 flex-row-reverse"
             />
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row  gap-5 border rounded-lg p-5 items-center">
+        <div className="flex  gap-5 border rounded-lg p-5 items-center">
           <p>
             Mathematical Thinking Build your foundational skills in algebra,
             geometry, and probability.

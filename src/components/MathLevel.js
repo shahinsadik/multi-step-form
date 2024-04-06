@@ -21,12 +21,12 @@ const MathLevel = ({ setOptionSelected }) => {
         Choose the highest level you feel confident in you can always adjust
         later.
       </h1>
-      <div className="lg:flex justify-center items-center gap-5 my-5">
+      <div className="flex lg:flex-row flex-col justify-center items-center gap-5 my-5">
         {images.map((item, index) => (
           <div
             key={index}
             className={` border w-full ${
-              selectedOption === item ? " m-2 border-2 border-black" : ""
+              selectedOption === item ? "rounded-md border-2 border-gray-600" : ""
             }`}
             onClick={() => handleOptionClick(item)}
           >
@@ -35,7 +35,7 @@ const MathLevel = ({ setOptionSelected }) => {
               alt={`Picture ${index}`}
               width={500}
               height={500}
-              className=" h-50 w-72 p-5"
+              className=" lg:h-50 lg:w-72 p-5"
             />
           </div>
         ))}
