@@ -1,5 +1,5 @@
 # Multi Step Form
- [Live Link:]([https://nextjs.org/](https://multi-step-form-six-vert.vercel.app/)
+ [Live Link:](https://multi-step-form-six-vert.vercel.app/)
 
 
 ## Getting Started
